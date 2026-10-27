@@ -1,8 +1,12 @@
-name: first-workflow
-on: workflow_dispatch
+name: First GitHub Actions Workflow
+
+on:
+  workflow_dispatch:
+
 jobs:
   first-job:
-  runs-on: ubuntu-22.04
-  steps:
-  name: simple print message
-  run : echo "hello github actions"
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Simple print message
+        run: echo "hello github actions"
